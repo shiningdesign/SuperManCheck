@@ -17,11 +17,13 @@ It supports 普天同庆，贼健康和其他mel python的读写病毒
 # Install SuperManCheck
 
 Drag the install.mel to Maya viewport to install it on the current shelf.
+
 把install.mel文件拖入Maya视窗界面即可把它安装到当前工具栏，Language里切换语言
 
 # Use Together with puTianTongQingScannFolderEN
 
 puTianTongQingScannFolderEN supports faster MA file scan, but can't deal with reference file, it is best to use puTianTongQingScannFolderEN as a Root scanner for MA files. 
+
 puTianTongQingScannFolderEN 配合使用，但puTianTongQingScannFolderEN不支持Reference文件和MB文件，只适合快速的MA根目录全屏扫描
 https://github.com/shiningdesign/puTianTongQingScannFolderEN
 
@@ -29,15 +31,20 @@ https://github.com/shiningdesign/puTianTongQingScannFolderEN
 
 v1.9: (2021.03.16)
   * better local config check
+
 v1.6: (2021.03.09)
   * add method option
   * add preview method
+
 v1.5: (2021.03.08)
   * add fix method choice
+
 v1.0: (2021.03.08)
   * add virus fixer fix
+
 v0.2: (2020.06.29)
   * add scriptNode, fopen,fclose,fprint keyword detection 
   * code standalonization
+
 v0.1: (2020.06.27)
   * notes here
