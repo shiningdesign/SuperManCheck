@@ -5,6 +5,8 @@ It use ban_word_list to check file operation in script node (mel and python) to 
 Maya病毒扫描清理工具，支持本地配置文件扫描清理，安全打开Maya文件并设置好动画时间轴，指定目录批量扫描清理文件（MA，MB），包括自动修复Reference文件。
 它是利用ban_word_list禁用的文件读写操作来检查script node (mel and python), 你也可以在ban_word_list里增加其他不常见词汇来拓展SuperManCheck.py
 
+It supports 普天同庆，贼健康和其他mel python的读写病毒
+
 ![SuperManCheck_v1.9_en.png](notes/SuperManCheck_v1.9_en.png?raw=true)
 ![SuperManCheck_v1.9_cn.png](notes/SuperManCheck_v1.9_cn.png?raw=true)
 
