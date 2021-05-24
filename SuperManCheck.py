@@ -28,7 +28,7 @@ log = '''
 by shining ying
 https://github.com/shiningdesign/
 v2.0: (2021.05.24)
-  * fix error on empty script string
+  * fix error on empty script string and mb rename flag error
 v1.9: (2021.03.16)
   * better local config check
 v1.6: (2021.03.09)
@@ -568,8 +568,8 @@ class SuperManCheck(UniversalToolUI):
                                     cmds.file(rename = each[:-3]+'_fixTmp.ma')
                                     cur_new_name = cmds.file(f=1, save=1, type="mayaAscii", executeScriptNodes=0)
                                 elif each.lower().endswith('.mb'):
-                                    cmds.file(rename = each[:-3]+'_fixTmp.mb',  executeScriptNodes=0)
-                                    cur_new_name = cmds.file(f=1, save=1, type="mayaBinary")
+                                    cmds.file(rename = each[:-3]+'_fixTmp.mb')
+                                    cur_new_name = cmds.file(f=1, save=1, type="mayaBinary", executeScriptNodes=0)
                                 cmds.file(f=1, new=1, executeScriptNodes=0)
                                 # rename
                                 if os.path.isfile(cur_new_name):
