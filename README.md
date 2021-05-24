@@ -31,6 +31,7 @@ https://github.com/shiningdesign/puTianTongQingScannFolderEN
 
 v2.0: (2021.05.21)
   * fix empty script node error issue
+  * fix mb file rename saving error
 
 v1.9: (2021.03.16)
   * better local config check
