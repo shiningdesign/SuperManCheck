@@ -21,12 +21,14 @@ except ImportError:
 #############################################
 # User Class creation
 #############################################
-version = '1.9'
-date = '2021.03.16'
+version = '2.0'
+date = '2021.05.24'
 log = '''
 #------------------------------
 by shining ying
 https://github.com/shiningdesign/
+v2.0: (2021.05.24)
+  * fix error on empty script string
 v1.9: (2021.03.16)
   * better local config check
 v1.6: (2021.03.09)
@@ -368,10 +370,11 @@ class SuperManCheck(UniversalToolUI):
         issue_scriptNode_list = []
         for each_scriptNode in all_scriptNode_list:
             script_check_text = cmds.scriptNode(each_scriptNode,q=1,bs=1)
-            for each_keyword in config['keyword']:
-                if each_keyword in script_check_text:
-                    issue_scriptNode_list.append(each_scriptNode )
-                    break
+            if script_check_text:
+                for each_keyword in config['keyword']:
+                    if each_keyword in script_check_text:
+                        issue_scriptNode_list.append(each_scriptNode )
+                        break
         return issue_scriptNode_list
     def getIssueNode_old(self):
         local_ui_scriptNode_list = cmds.ls('MayaMelUIConfigurationFile')
