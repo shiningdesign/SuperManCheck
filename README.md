@@ -29,6 +29,9 @@ https://github.com/shiningdesign/puTianTongQingScannFolderEN
 
 # Update Notes:
 
+v2.0: (2021.05.21)
+  * fix empty script node error issue
+
 v1.9: (2021.03.16)
   * better local config check
 
